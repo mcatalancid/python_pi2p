@@ -1,0 +1,5 @@
+#!/home/miguel/workspace/wng_software_old/python/out_MOXA-UC8481/bin/python2.7
+
+from idlelib.PyShell import main
+if __name__ == '__main__':
+    main()
