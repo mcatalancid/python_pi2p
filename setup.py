@@ -313,7 +313,7 @@ class PyBuildExt(build_ext):
             imp.load_dynamic(ext.name, ext_filename)
         except ImportError, why:
             if os.environ.get('CROSS_COMPILE_TARGET') != "yes":
-            self.announce('*** WARNING: renaming "%s" since importing it'
+            	self.announce('*** WARNING: renaming "%s" since importing it'
                           ' failed: %s' % (ext.name, why), level=3)
             assert not self.inplace
             basename, tail = os.path.splitext(ext_filename)
