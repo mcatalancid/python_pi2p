@@ -445,7 +445,7 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2'
+ac_pwd='/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2-pythonforandroid'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 test -n "$AWK" || AWK=awk
@@ -673,7 +673,7 @@ S["AR"]="ar"
 S["RANLIB"]="i686-linux-android-ranlib"
 S["GNULD"]="yes"
 S["LINKCC"]="$(PURIFY) $(MAINCC)"
-S["RUNSHARED"]="LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2:/usr/local/lib/"
+S["RUNSHARED"]="LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2-pythonforandroid:/usr/local/lib/"
 S["INSTSONAME"]="libpython$(VERSION).so.1.0"
 S["LDLIBRARYDIR"]=""
 S["BLDLIBRARY"]="-L. -lpython$(VERSION)"

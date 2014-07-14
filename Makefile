@@ -134,7 +134,7 @@ MACOSX_DEPLOYMENT_TARGET=
 OTHER_LIBTOOL_OPT=
 
 # Environment to run shared python without installed libraries
-RUNSHARED=       LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2:/usr/local/lib/
+RUNSHARED=       LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2-pythonforandroid:/usr/local/lib/
 
 # Modes for directories, executables and data files created by the
 # install process.  Default to user-only-writable for all file types.

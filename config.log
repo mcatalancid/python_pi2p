@@ -29,12 +29,17 @@ uname -v = #2 SMP Fri Jun 20 14:44:54 UTC 2014
 
 PATH: /usr/local/arm-linux-4.4.2-v4/bin
 PATH: /usr/bin
+PATH: /usr/local/arm-linux-4.4.2-v4/bin
+PATH: /usr/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
 PATH: /usr/bin
 PATH: /sbin
 PATH: /bin
+PATH: /home/miguel/eclipse/
+PATH: /home/miguel/SublimeText2
+PATH: /usr/java/jdk1.7.0_51/bin/
 PATH: /home/miguel/eclipse/
 PATH: /home/miguel/SublimeText2
 PATH: /usr/java/jdk1.7.0_51/bin/
@@ -11194,7 +11199,7 @@ configure:7912: result: yes
 configure:7923: checking for shl_load in -ldld
 configure:7948: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldld  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ldld
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccqWpO0Z.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'shl_load'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccyFjMkB.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'shl_load'
 collect2: ld returned 1 exit status
 configure:7948: $? = 1
 configure: failed program was:
@@ -11308,7 +11313,7 @@ configure:8019: result: none required
 configure:8032: checking for textdomain in -lintl
 configure:8057: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lintl  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lintl
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccMI48S7.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'textdomain'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccE3b7EK.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'textdomain'
 collect2: ld returned 1 exit status
 configure:8057: $? = 1
 configure: failed program was:
@@ -11418,7 +11423,7 @@ configure:8066: result: no
 configure:8113: checking for t_open in -lnsl
 configure:8138: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lnsl  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lnsl
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccOLyUpc.o: in function main:conftest.c(.text+0x13): error: undefined reference to 't_open'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccM9RpjP.o: in function main:conftest.c(.text+0x13): error: undefined reference to 't_open'
 collect2: ld returned 1 exit status
 configure:8138: $? = 1
 configure: failed program was:
@@ -12226,7 +12231,7 @@ configure:8645: result: yes
 configure:8879: checking for usconfig in -lmpc
 configure:8904: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lmpc  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lmpc
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cckf6CFk.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'usconfig'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccwT1Ggf.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'usconfig'
 collect2: ld returned 1 exit status
 configure:8904: $? = 1
 configure: failed program was:
@@ -12482,7 +12487,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for bind_textdomain_codeset
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cccOFpoU.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'bind_textdomain_codeset'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccs2H8WN.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'bind_textdomain_codeset'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -12632,7 +12637,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for confstr
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccGVtZd6.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'confstr'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc6Skmf1.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'confstr'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -12776,7 +12781,7 @@ configure: failed program was:
 configure:9566: result: no
 configure:9566: checking for ctermid
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc8T8Mgc.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'ctermid'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccK7SVM4.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'ctermid'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -12962,7 +12967,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for getloadavg
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccclvYY2.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getloadavg'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc035znC.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getloadavg'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13140,7 +13145,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for getpwent
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccWnVZMg.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getpwent'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cce16nVa.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getpwent'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13300,7 +13305,7 @@ configure: failed program was:
 configure:9566: result: no
 configure:9566: checking for getspnam
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cck0rugm.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getspnam'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc4thaeg.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getspnam'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13460,7 +13465,7 @@ configure: failed program was:
 configure:9566: result: no
 configure:9566: checking for getspent
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cccWe4Lq.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getspent'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cceTijik.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getspent'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13620,7 +13625,7 @@ configure: failed program was:
 configure:9566: result: no
 configure:9566: checking for getsid
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccAO9ubw.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getsid'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccq3Fp4o.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getsid'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13780,7 +13785,7 @@ configure: failed program was:
 configure:9566: result: no
 configure:9566: checking for getwd
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc8vSx4A.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getwd'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccMAgcou.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'getwd'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -13952,7 +13957,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for lchmod
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccuWdW2S.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'lchmod'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cck9eAXM.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'lchmod'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -14123,7 +14128,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for mkfifo
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccmEo9J5.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'mkfifo'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cckvyow1.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'mkfifo'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -14312,7 +14317,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for plock
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccYnsneG.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'plock'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccKb09Gj.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'plock'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -14487,7 +14492,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for pthread_init
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccAXveQP.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'pthread_init'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccAJ3cSs.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'pthread_init'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -14774,7 +14779,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for sigrelse
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccilHthG.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'sigrelse'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccmpdDTl.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'sigrelse'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -15000,7 +15005,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for timegm
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccgEDNW9.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'timegm'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccazrRAN.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'timegm'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -15222,7 +15227,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for tmpnam_r
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cct3g8Ll.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'tmpnam_r'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccYFJuu5.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'tmpnam_r'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -15459,7 +15464,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for wait4
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccuvfz7J.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'wait4'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc4ww5UI.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'wait4'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -15682,7 +15687,7 @@ configure:9566: $? = 0
 configure:9566: result: yes
 configure:9566: checking for _getpty
 configure:9566: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccklseqT.o: in function main:conftest.c(.text+0x13): error: undefined reference to '_getpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc0PhtvS.o: in function main:conftest.c(.text+0x13): error: undefined reference to '_getpty'
 collect2: ld returned 1 exit status
 configure:9566: $? = 1
 configure: failed program was:
@@ -16351,7 +16356,7 @@ configure:10066: checking for chflags
 configure:10098: result: cross
 configure:10101: checking for chflags
 configure:10101: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccslp8tK.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'chflags'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccIpDCgq.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'chflags'
 collect2: ld returned 1 exit status
 configure:10101: $? = 1
 configure: failed program was:
@@ -16582,7 +16587,7 @@ configure:10115: checking for lchflags
 configure:10147: result: cross
 configure:10150: checking for lchflags
 configure:10150: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccYFGQ5S.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'lchflags'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccUbMJ9t.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'lchflags'
 collect2: ld returned 1 exit status
 configure:10150: $? = 1
 configure: failed program was:
@@ -16831,7 +16836,7 @@ configure:10334: $? = 0
 configure:10338: result: yes
 configure:10351: checking for openpty
 configure:10351: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc8iZYZd.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccgdypEU.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
 collect2: ld returned 1 exit status
 configure:10351: $? = 1
 configure: failed program was:
@@ -17066,7 +17071,7 @@ configure:10351: result: no
 configure:10358: checking for openpty in -lutil
 configure:10383: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lutil  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lutil
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccKSo2Vj.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccQzp3zZ.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
 collect2: ld returned 1 exit status
 configure:10383: $? = 1
 configure: failed program was:
@@ -17278,7 +17283,7 @@ configure:10392: result: no
 configure:10398: checking for openpty in -lbsd
 configure:10423: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lbsd  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lbsd
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccG0oYAo.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc2f9yl7.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'openpty'
 collect2: ld returned 1 exit status
 configure:10423: $? = 1
 configure: failed program was:
@@ -17489,7 +17494,7 @@ configure: failed program was:
 configure:10432: result: no
 configure:10448: checking for forkpty
 configure:10448: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccjHXAdm.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccqGHOW8.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
 collect2: ld returned 1 exit status
 configure:10448: $? = 1
 configure: failed program was:
@@ -17724,7 +17729,7 @@ configure:10448: result: no
 configure:10455: checking for forkpty in -lutil
 configure:10480: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lutil  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lutil
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccWHO44e.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc2j7hmd.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
 collect2: ld returned 1 exit status
 configure:10480: $? = 1
 configure: failed program was:
@@ -17936,7 +17941,7 @@ configure:10489: result: no
 configure:10495: checking for forkpty in -lbsd
 configure:10520: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lbsd  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lbsd
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc4R0cFj.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cciKz7Ti.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'forkpty'
 collect2: ld returned 1 exit status
 configure:10520: $? = 1
 configure: failed program was:
@@ -18152,7 +18157,7 @@ configure:10547: $? = 0
 configure:10547: result: yes
 configure:10561: checking for fseek64
 configure:10561: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccMMeb9o.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'fseek64'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc48B4do.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'fseek64'
 collect2: ld returned 1 exit status
 configure:10561: $? = 1
 configure: failed program was:
@@ -18391,7 +18396,7 @@ configure:10561: $? = 0
 configure:10561: result: yes
 configure:10561: checking for fstatvfs
 configure:10561: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccaGhbLC.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'fstatvfs'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccwweZrB.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'fstatvfs'
 collect2: ld returned 1 exit status
 configure:10561: $? = 1
 configure: failed program was:
@@ -18627,7 +18632,7 @@ configure: failed program was:
 configure:10561: result: no
 configure:10561: checking for ftell64
 configure:10561: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccucAPJH.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'ftell64'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc0PbxoG.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'ftell64'
 collect2: ld returned 1 exit status
 configure:10561: $? = 1
 configure: failed program was:
@@ -18867,7 +18872,7 @@ configure:10561: $? = 0
 configure:10561: result: yes
 configure:10561: checking for statvfs
 configure:10561: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccA0ij1T.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'statvfs'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccKMjdCP.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'statvfs'
 collect2: ld returned 1 exit status
 configure:10561: $? = 1
 configure: failed program was:
@@ -21611,7 +21616,7 @@ configure:11602: $? = 0
 configure:11609: result: yes
 configure:11725: checking for __fpu_control
 configure:11725: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -ldl  >&5
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc2xRNAN.o: in function main:conftest.c(.text+0x13): error: undefined reference to '__fpu_control'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccsuqbFM.o: in function main:conftest.c(.text+0x13): error: undefined reference to '__fpu_control'
 collect2: ld returned 1 exit status
 configure:11725: $? = 1
 configure: failed program was:
@@ -21873,7 +21878,7 @@ configure:11725: result: no
 configure:11729: checking for __fpu_control in -lieee
 configure:11754: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lieee  -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lieee
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccKMOHxS.o: in function main:conftest.c(.text+0x13): error: undefined reference to '__fpu_control'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccEUDHEQ.o: in function main:conftest.c(.text+0x13): error: undefined reference to '__fpu_control'
 collect2: ld returned 1 exit status
 configure:11754: $? = 1
 configure: failed program was:
@@ -24034,7 +24039,7 @@ configure:12835: result: yes
 configure:12852: checking how to link readline libs
 configure:12879: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lreadline -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cciDStuT.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cckFIamS.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
 collect2: ld returned 1 exit status
 configure:12879: $? = 1
 configure: failed program was:
@@ -24297,7 +24302,7 @@ configure: failed program was:
 configure:12879: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lreadline -lncursesw -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lncursesw
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccM47YfY.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccOU5U7W.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
 collect2: ld returned 1 exit status
 configure:12879: $? = 1
 configure: failed program was:
@@ -24560,7 +24565,7 @@ configure: failed program was:
 configure:12879: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lreadline -lncurses -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lncurses
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc6G7LoZ.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cceM3NnY.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
 collect2: ld returned 1 exit status
 configure:12879: $? = 1
 configure: failed program was:
@@ -24823,7 +24828,7 @@ configure: failed program was:
 configure:12879: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lreadline -lcurses -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lcurses
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccaTBLV4.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccMLtmwZ.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
 collect2: ld returned 1 exit status
 configure:12879: $? = 1
 configure: failed program was:
@@ -25086,7 +25091,7 @@ configure: failed program was:
 configure:12879: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot  -lm conftest.c -lreadline -ltermcap -ldl  >&5
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccIQu1A5.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccINKYB5.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'readline'
 collect2: ld returned 1 exit status
 configure:12879: $? = 1
 configure: failed program was:
@@ -25354,7 +25359,7 @@ configure:12927: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-f
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccAK4I3a.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_callback_handler_install'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cco7gKvb.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_callback_handler_install'
 collect2: ld returned 1 exit status
 configure:12927: $? = 1
 configure: failed program was:
@@ -25869,7 +25874,7 @@ configure:13013: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-f
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccol2KLe.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_pre_input_hook'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccex1zXd.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_pre_input_hook'
 collect2: ld returned 1 exit status
 configure:13013: $? = 1
 configure: failed program was:
@@ -26137,7 +26142,7 @@ configure:13057: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-f
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccYHDVnn.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_completion_display_matches_hook'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccsYkLYi.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_completion_display_matches_hook'
 collect2: ld returned 1 exit status
 configure:13057: $? = 1
 configure: failed program was:
@@ -26405,7 +26410,7 @@ configure:13101: i686-linux-android-gcc -o conftest -DANDROID -mandroid -fomit-f
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -lreadline
 /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: error: cannot find -ltermcap
-/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/ccyGsRXr.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_completion_matches'
+/home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/bin/../lib/gcc/i686-linux-android/4.6/../../../../i686-linux-android/bin/ld: /tmp/cc20dIun.o: in function main:conftest.c(.text+0x13): error: undefined reference to 'rl_completion_matches'
 collect2: ld returned 1 exit status
 configure:13101: $? = 1
 configure: failed program was:
@@ -29043,6 +29048,7 @@ config.status:1128: creating Modules/Setup.config
 config.status:1128: creating Misc/python.pc
 config.status:1128: creating Modules/ld_so_aix
 config.status:1128: creating pyconfig.h
+config.status:1303: pyconfig.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -29472,7 +29478,7 @@ PYTHONFRAMEWORKIDENTIFIER='org.python.python'
 PYTHONFRAMEWORKINSTALLDIR=''
 PYTHONFRAMEWORKPREFIX=''
 RANLIB='i686-linux-android-ranlib'
-RUNSHARED='LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2:/usr/local/lib/'
+RUNSHARED='LD_LIBRARY_PATH=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/python-2.7.2-pythonforandroid:/usr/local/lib/'
 SGI_ABI=''
 SHELL='/bin/bash'
 SHLIBS='$(LIBS)'
