@@ -1,0 +1,5 @@
+#!/home/miguel/workspace/cbm_app/embedded_sdk_android/python/out_android_4.2.2-x86/bin/python2.7
+
+from idlelib.PyShell import main
+if __name__ == '__main__':
+    main()
