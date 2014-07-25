@@ -63,12 +63,12 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 # Compiler options
 OPT=		-DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes
 BASECFLAGS=	 -fno-strict-aliasing
-CFLAGS=		$(BASECFLAGS) -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot $(OPT) $(EXTRA_CFLAGS)
+CFLAGS=		$(BASECFLAGS) -DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot -I/home/miguel/workspace/cbm_app/embedded_sdk_android/python/../sqlite/out_android_4.2.2-x86/include  $(OPT) $(EXTRA_CFLAGS)
 # Both CPPFLAGS and LDFLAGS need to contain the shell's value for setup.py to
 # be able to build extension modules using the directories specified in the
 # environment variables
 CPPFLAGS=	-I. -IInclude -I$(srcdir)/Include 
-LDFLAGS=	-lm
+LDFLAGS=	-lm -L/home/miguel/workspace/cbm_app/embedded_sdk_android/python/../sqlite/out_android_4.2.2-x86/lib 
 LDLAST=		
 SGI_ABI=	
 CCSHARED=	-fPIC
@@ -143,7 +143,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--host=i686-linux-android' '--prefix=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/out_android_4.2.2-x86' '--enable-shared' '--disable-toolbox-glue' '--disable-framework' 'CFLAGS=-DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot' 'LDFLAGS=-lm' '	' 'build_alias=	' 'host_alias=i686-linux-android' 'target_alias=	'
+CONFIG_ARGS=	 '--host=i686-linux-android' '--prefix=/home/miguel/workspace/cbm_app/embedded_sdk_android/python/out_android_4.2.2-x86' '--enable-shared' '--disable-toolbox-glue' '--disable-framework' 'CFLAGS=-DANDROID -mandroid -fomit-frame-pointer --sysroot /home/miguel/workspace/cbm_app/ramos_tablet/x86-4.6/sysroot -I/home/miguel/workspace/cbm_app/embedded_sdk_android/python/../sqlite/out_android_4.2.2-x86/include ' 'LDFLAGS=-lm -L/home/miguel/workspace/cbm_app/embedded_sdk_android/python/../sqlite/out_android_4.2.2-x86/lib ' '	' 'build_alias=	' 'host_alias=i686-linux-android' 'target_alias=	'
 
 
 # Subdirectories with code
