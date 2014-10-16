@@ -451,7 +451,6 @@ class PyBuildExt(build_ext):
             mydir = os.environ.get('PYTHON_XCOMPILE_DEPENDENCIES_PREFIX')
             if mydir:
                 inc_dirs += [mydir + '/include' ]
-                inc_dirs += [mydir + '/lib/libffi-3.0.10/include']
                 lib_dirs += [mydir + '/lib' ]
 
         exts = []
@@ -724,24 +723,40 @@ class PyBuildExt(build_ext):
         # socket(2)
         exts.append( Extension('_socket', ['socketmodule.c'],
                                depends = ['socketmodule.h']) )
+        
+        
+        if not self.cross_compile:
+            search_for_ssl_incs_in = [
+                                  '/usr/local/ssl/include',
+                                  '/usr/contrib/ssl/include/'
+                                 ]
+            ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,
+                                     ['/usr/local/ssl/lib',
+                                      '/usr/contrib/ssl/lib/'
+                                     ] )
+        else:
+            # The common install prefix of 3rd party headers used during
+            # cross compilation
+            mydir = os.environ.get('OPENSSL_XCOMPILE_DEPENDENCIES_PREFIX')
+            if mydir:
+                search_for_ssl_incs_in = [mydir + '/include' ]
+                ssl_libs = [mydir + '/lib' ]
+            else:
+                search_for_ssl_incs_in = []
+                ssl_libs = []
+                
+       
         # Detect SSL support for the socket module (via _ssl)
-        search_for_ssl_incs_in = [
-                              '/usr/local/ssl/include',
-                              '/usr/contrib/ssl/include/'
-                             ]
+
         ssl_incs = find_file('openssl/ssl.h', inc_dirs,
                              search_for_ssl_incs_in
-                             )
+                             )          
         if ssl_incs is not None:
             krb5_h = find_file('krb5.h', inc_dirs,
                                ['/usr/kerberos/include'])
             if krb5_h:
                 ssl_incs += krb5_h
-        ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,
-                                     ['/usr/local/ssl/lib',
-                                      '/usr/contrib/ssl/lib/'
-                                     ] )
-
+        
         if (ssl_incs is not None and
             ssl_libs is not None):
             exts.append( Extension('_ssl', ['_ssl.c'],
@@ -749,7 +764,9 @@ class PyBuildExt(build_ext):
                                    library_dirs = ssl_libs,
                                    libraries = ['ssl', 'crypto'],
                                    depends = ['socketmodule.h']), )
+            print "USING SSL"
         else:
+            print "SSL NOT USED"
             missing.append('_ssl')
 
         # find out which version of OpenSSL we have
@@ -1039,7 +1056,7 @@ class PyBuildExt(build_ext):
         else:
             # The common install prefix of 3rd party headers used during
             # cross compilation
-            mydir = os.environ.get('PYTHON_XCOMPILE_DEPENDENCIES_PREFIX')
+            mydir = os.environ.get('SQLITE3_XCOMPILE_DEPENDENCIES_PREFIX')
             if mydir:
                 sqlite_inc_paths = [mydir + '/include' ]
             else:
